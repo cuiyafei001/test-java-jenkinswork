@@ -1,0 +1,50 @@
+server:
+  port: 9999
+  
+#jsp 支持
+spring:
+    application:
+        name: somnam-web
+    mvc:
+        view:
+            suffix: .jsp
+            prefix: /WEB-INF/jsp/
+#    datasource:
+#        url: jdbc:mysql://192.168.1.121:3306/finance_vcc?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+#        username: finance_vcc
+#        password: Abcd_1234
+#        driver-class-name: com.mysql.jdbc.Driver
+#        type: com.zaxxer.hikari.HikariDataSource
+#        hikari:
+#            minimum-idle: 100
+#            maximum-pool-size: 100
+#            max-lifetime: 1800000
+#            idle-timeout: 600000
+#            connection-timeout: 30000
+#            connection-test-query: SELECT 1
+#            data-source-properties:
+#                cachePrepStmts: true
+#                prepStmtCacheSize: 250
+#                prepStmtCacheSqlLimit: 2048
+        
+        
+#关闭默认模板引擎
+    thymeleaf:
+        cache: false
+        enabled: false     
+
+#spring cloud eureka配置      
+#eureka:
+#    client:
+#        service-url:
+#          defaultZone: http://localhost:8900/eureka
+#    instance:
+#        prefer-ip-address: true
+#        instance-id: ${spring.cloud.client.ipAddress}:${server.port}        
+
+#spring cloud zuul配置           
+#zuul:
+#    routes:
+#        hello:
+#            path: /hello/**
+#            url: http://localhost:9999/index
