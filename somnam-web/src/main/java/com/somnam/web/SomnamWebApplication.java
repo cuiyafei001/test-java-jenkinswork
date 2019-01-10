@@ -9,6 +9,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 //@EnableZuulProxy
 //@EnableFeignClients
 //@EnableDiscoveryClient
+//启动服务后浏览器访问http://localhost:9999/index
 @SpringBootApplication
 public class SomnamWebApplication {
 
