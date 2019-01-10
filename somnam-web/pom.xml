@@ -6,7 +6,6 @@
 	<groupId>com.somnam.web</groupId>
 	<artifactId>somnam-web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 
 	<name>somnam-web</name>
 	<description>somnam-web</description>
@@ -108,4 +107,5 @@
 		</plugins>
 	</build>
 
+	<packaging>jar</packaging>
 </project>
